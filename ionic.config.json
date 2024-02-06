@@ -1,0 +1,7 @@
+{
+  "name": "desk",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
