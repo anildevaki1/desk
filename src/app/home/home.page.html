@@ -1,20 +1,105 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content  class="content">
+  
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <div class="ion-no-border ion-no-padding">
+      <ion-toolbar class="header">
+        <h3 class="title">Welcome Anil</h3>
+        <ion-avatar slot="end" class="dp">
+          <img alt="DP" src="../../assets/img/srkimage.jpg" />
+        </ion-avatar>
+      </ion-toolbar>
+    </div>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <div class="body ion-margin-top">
+      <div class="text-center">
+        <ion-text class="text-light">Bond Points</ion-text>
+        <h1 class="text-success">24.29</h1>
+      </div>
+      <picture class="img-center">
+        <img src="../../assets/img/Boosting Indicator.svg">
+      </picture>
+
+      <div class="grid ion-margin-top">
+        <ion-card class="bluefaint">
+          <ion-card-content class="text-center">
+            <ion-text class="fs-13px" color="light">Activate Rate</ion-text>
+            <h2>0.75 Points/hr</h2>
+          </ion-card-content>
+        </ion-card>
+
+
+        <ion-card class="bluefaint">
+          <ion-card-content class="text-center">
+            <ion-text class="fs-13px" color="light">Activate Rate</ion-text>
+            <h2>0.75 Points/hr</h2>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </div>
+
+    <div class="drower">
+      <h4 class="fw-600">Your Dashboard</h4>
+
+      <ion-card class="ion-margin-top">
+        <ion-card-content class="input-group">
+          <div>
+            <ion-text>Active job Applications</ion-text>
+            <h1>2</h1>
+          </div>
+          <picture slot="end">
+            <img src="../../assets/img/i1.svg" alt="">
+          </picture>
+        </ion-card-content>
+      </ion-card>
+
+
+      <ion-card class="ion-margin-top">
+        <ion-card-content>
+          <ion-text>Active referrals</ion-text>
+          <h1>2</h1>
+          <picture slot="end">
+            <img src="../../assets/img/i2.svg" slot="end" alt="">
+          </picture>
+        </ion-card-content>
+      </ion-card>
+
+
+      <h4 class="fw-600"> Do more with Bondex</h4>
+
+    </div>
+  
+
 </ion-content>
+
+<ion-tabs>
+  <!-- Tab bar -->
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="schedule">
+      <ion-icon name="person-circle-outline" aria-hidden="true"></ion-icon>
+      <ion-label>Profile</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="speakers">
+
+      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+      <ion-label>Jobs</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="speakers">
+      <picture style="padding: 2px;">
+        <img src="../../assets/img/imgbtn.svg" alt="">
+      </picture>
+    </ion-tab-button>
+
+    <ion-tab-button tab="map">
+
+      <ion-icon name="person-add-outline" aria-hidden="true"></ion-icon>
+      <ion-label>Invite</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="about">
+      <ion-icon name="notifications-outline" aria-hidden="true"></ion-icon>
+      <ion-label>Notification</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
