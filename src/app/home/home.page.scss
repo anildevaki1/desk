@@ -1,6 +1,7 @@
 .title {
   float: left;
   margin-left: 10px;
+  font-size: 1.5rem;
 }
 
 .fw-600 {
@@ -20,10 +21,11 @@
 }
 
 .content {
-  overflow-y: scroll;
+ // overflow-y: scroll;
   --background: rgba(7, 40, 58, 255);
    padding-bottom:200px;
-   
+  // height: calc(100vh - 150px) !important;
+  
 }
 
 .header,
@@ -67,7 +69,8 @@
 
 
 .drower {
-  margin-top: 40px;
+  
+  width: 100%;
   background-color: #eee;
   padding: 25px;
   border-top-left-radius: 20px;
@@ -79,4 +82,24 @@
   display: grid;
   grid-template-columns: 80% 20%;
 
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+ 
+swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+ 
+  --swiper-pagination-bullet-inactive-color: var(--ion-color-step-200, #cccccc);
+  --swiper-pagination-color: var(--ion-color-primary, #3880ff);
 }
