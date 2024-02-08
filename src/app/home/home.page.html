@@ -1,7 +1,6 @@
 
+<ion-content [fullscreen]="true" class="content">
 
-<ion-content [fullscreen]="true"  class="content">
- 
   <ion-header class="ion-no-border ion-no-padding">
     <ion-toolbar class="header">
       <ion-text class="title">Welcome Anil</ion-text>
@@ -9,8 +8,9 @@
         <img alt="DP" src="../../assets/img/srkimage.jpg" />
       </ion-avatar>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> 
 
+    
   <section class="ion-margin-top">
     <div class="text-center">
       <ion-text class="text-light">Bond Points</ion-text>
@@ -68,15 +68,6 @@
 
 
     <h4 class="fw-600"> Do more with Bondex</h4>
-
-     
-      <!-- <ion-button (click)="prev()" color="primary">
-        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
-      </ion-button>
-    
-      <ion-button (click)="next()" color="primary">
-        <ion-icon slot="icon-only" name="arrow-forward"></ion-icon>
-      </ion-button> -->
     
 
     <swiper-container
@@ -91,13 +82,16 @@
     </swiper-container>
 
     
-  </section>
+  </section> 
 
 
+  
 </ion-content>
 
+<ion-footer>
+  
 <ion-tabs>
-  <!-- Tab bar -->
+  
   <ion-tab-bar slot="bottom">
     <ion-tab-button tab="schedule">
       <ion-icon name="person-circle-outline" aria-hidden="true"></ion-icon>
@@ -128,3 +122,5 @@
     </ion-tab-button>
   </ion-tab-bar>
 </ion-tabs>
+
+</ion-footer>
