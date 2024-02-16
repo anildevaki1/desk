@@ -1,4 +1,3 @@
-
 <ion-content [fullscreen]="true" class="content">
 
   <ion-header class="ion-no-border ion-no-padding">
@@ -8,9 +7,9 @@
         <img alt="DP" src="../../assets/img/srkimage.jpg" />
       </ion-avatar>
     </ion-toolbar>
-  </ion-header> 
+  </ion-header>
 
-    
+
   <section class="ion-margin-top">
     <div class="text-center">
       <ion-text class="text-light">Bond Points</ion-text>
@@ -44,8 +43,8 @@
     <ion-card class="ion-margin-top">
       <ion-card-content class="input-group">
         <div>
-          <ion-text>Active job Applications</ion-text>
-          <h1>2</h1>
+          <ion-text class="text-dark">Active job Applications</ion-text>
+          <h1 class="text-dark text-bold">2</h1>
         </div>
         <picture slot="end">
           <img src="../../assets/img/i1.svg" alt="">
@@ -54,73 +53,76 @@
     </ion-card>
 
 
-    <ion-card class="ion-margin-top">
-      <ion-card-content class="input-group">
-        <div>
-          <ion-text>Active referrals</ion-text>
-          <h1>2</h1>
+
+    <h4 class="fw-600 mt-3-5"> Do more with Bondex</h4>
+
+
+    <swiper-container [loop]="true" [pagination]="true">
+      <swiper-slide>
+        <div class="swiper-zoom-container" style="z-index: 1;display: flex;align-items: center;">
+          <div class="card">
+            <img src="../../assets/img/imgbtn.svg" class="cardImg" alt="">
+            <ion-text>
+              Learn about Bond points
+            </ion-text>
+          </div>
+
         </div>
-        <picture slot="end">
-          <img src="../../assets/img/i2.svg" slot="end" alt="">
-        </picture>
-      </ion-card-content>
-    </ion-card>
+      </swiper-slide>
 
 
-    <h4 class="fw-600"> Do more with Bondex</h4>
-    
+      <swiper-slide>
+        <div class="swiper-zoom-container" style="z-index: 1;">
+          <div class="card">
+            <img src="../../assets/img/rabbit 1.png" class="cardImg" alt="">
+            <ion-text>
+              Encrease your Activity rate tip #1
+            </ion-text>
+          </div>
 
-    <swiper-container
-    [loop]="true"
-    [pagination]="true"
-    >
-    <swiper-slide *ngFor="let image of images">
-      <div class="swiper-zoom-container">
-        <img [src]="image" />
-      </div>
-    </swiper-slide>
+        </div>
+      </swiper-slide>
+
+      <swiper-slide>
+        <div class="swiper-zoom-container" style="z-index: 1;">
+          <div class="card">
+            <img src="../../assets/img/Group.svg" class="cardImg" alt="">
+            <ion-text>
+              Increase your activity rate tip #2
+            </ion-text>
+          </div>
+        </div>
+      </swiper-slide>
+
+      <swiper-slide>
+        <div class="swiper-zoom-container" style="z-index: 1;">
+          <div class="card">
+            <img src="../../assets/img/Group 37829.svg" class="cardImg" alt="">
+            <ion-text>
+              Boost job applications
+            </ion-text>
+          </div>
+        </div>
+      </swiper-slide>
     </swiper-container>
 
-    
-  </section> 
 
+    <h4 class="fw-600 mt-3-5"> Invite your friends</h4>
 
-  
+    <ion-card class="article ion-text-center ion-no-margin">
+
+      <img src="../../assets/img/invite-friends.svg" alt="">
+
+      <ion-card-header>
+        <h1 class="text-dark">Build your Network</h1>
+      </ion-card-header>
+      
+      <ion-card-content>
+        Each Actively boosting Connection increases
+        your activity rate by +0.02 points per hour.
+
+        <ion-button color="success" shape="round"><ion-icon name="copy-outline"></ion-icon> &nbsp; Copy referral link</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </section>
 </ion-content>
-
-<ion-footer>
-  
-<ion-tabs>
-  
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="schedule">
-      <ion-icon name="person-circle-outline" aria-hidden="true"></ion-icon>
-      <ion-label>Profile</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="speakers">
-
-      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-      <ion-label>Jobs</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="speakers">
-      <picture style="padding: 2px;">
-        <img src="../../assets/img/imgbtn.svg" alt="">
-      </picture>
-    </ion-tab-button>
-
-    <ion-tab-button tab="map">
-
-      <ion-icon name="person-add-outline" aria-hidden="true"></ion-icon>
-      <ion-label>Invite</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="about">
-      <ion-icon name="notifications-outline" aria-hidden="true"></ion-icon>
-      <ion-label>Notification</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs>
-
-</ion-footer>

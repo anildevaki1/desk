@@ -1,11 +1,31 @@
+$dark:#000;
+
 .title {
   float: left;
   margin-left: 10px;
   font-size: 1.5rem;
 }
 
+ion-card-title{
+  color:$dark;
+  --color:$dark;
+}
+
+.text-dark{
+  --color:$dark;
+  color: $dark;
+}
+
+.text-bold{
+  font-weight: bold !important; 
+}
+
 .fw-600 {
   font-weight: 600;
+}
+
+.mt-3-5{
+  margin-top: 3.5rem;
 }
 
 .header {
@@ -103,3 +123,30 @@ swiper-container {
   --swiper-pagination-bullet-inactive-color: var(--ion-color-step-200, #cccccc);
   --swiper-pagination-color: var(--ion-color-primary, #3880ff);
 }
+
+
+.card {
+  /* Set a fixed or adaptive height for vertical centering to work reliably */
+  height: 150px; /* Or dynamically determine the height using JavaScript */
+  display: flex; /* Or use alternative methods like grid or vertical-align */
+  flex-direction: column;
+  border:2px solid #eee;
+  border-radius: 14px;
+  margin-top: 10%;
+  width: 80%;
+  background-color: rgba(7, 40, 58, 255);
+  align-items: center;
+  color: #fff;
+  box-shadow: 2px 2px 2px 2px #ffc4c4;
+}
+
+.cardImg {
+  /* Apply the transform property */
+  transform: translateY(-30%);
+  /* Optionally, set width and height to prevent image distortion */
+  width: 70%; /* Or adjust as needed */
+  height: 70%; /* Or adjust as needed */
+  
+}
+
+
